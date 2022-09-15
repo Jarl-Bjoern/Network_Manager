@@ -4,3 +4,7 @@ The Network Manager is the first program, which was programmed by me and is used
 
 
 the Linux version is still under development.
+
+
+Dependencies (Windows without executeable):
+  - pywin32
