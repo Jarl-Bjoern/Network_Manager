@@ -122,10 +122,10 @@ def GUI():
             Status_Overview = getoutput('netsh interface show interface')
             Status_NICS = findall('Verbunden|Getrennt', Status_Overview)
             Status_NICS_Two = findall('Aktiviert|Deaktiviert', Status_Overview)
-        else:
-            Status_Overview = getoutput('netsh interface show interface')
-            Status_NICS = findall('Verbunden|Getrennt', Status_Overview)
-            Status_NICS_Two = findall('Aktiviert|Deaktiviert', Status_Overview)
+        else: pass
+            #Status_Overview = getoutput('netsh interface show interface')
+            #Status_NICS = findall('Verbunden|Getrennt', Status_Overview)
+            #Status_NICS_Two = findall('Aktiviert|Deaktiviert', Status_Overview)
     
         if (State != False):
             while True:
