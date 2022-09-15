@@ -115,7 +115,7 @@ def GUI():
         lb_NICS.insert(len(Array_NICS), i)
 
     # Functions
-    def Durchsuchung(State):
+    def Search(State):
         global Array_Status
     
         if (osname == 'nt'):
@@ -149,7 +149,7 @@ def GUI():
         Array_Status.clear()
         sleep(seconds)
         lb_Status.delete(0, tkEND)
-        Durchsuchung(State)
+        Search(State)
 
         for i in Array_Status:
             lb_Status.insert(len(Array_Status), f'  {i}')
