@@ -18,4 +18,4 @@ try:
         from win32con import SW_HIDE, WM_CLOSE
         from win32console import GetConsoleWindow
         from win32gui import PostMessage, ShowWindow
-except ModuleNotFoundError as e: input("The module {e} was not found.\n\nPlease enter with return")
+except ModuleNotFoundError as e: input(f"The module {e} was not found.\n\nPlease enter with return")
