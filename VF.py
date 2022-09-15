@@ -93,13 +93,13 @@ def GUI():
 
     if (osname == 'nt'):
         Network_Overview = getoutput('netsh interface show interface')
-        Suchwert = rsplit("Deaktiviert|Aktiviert|Verbunden|Dediziert|\n|Getrennt|Verw.|Status|Schnittstellenname|status|Typ|\n", Network_Overview)
-    else:
-        Network_Overview = getoutput('ip address')
-        Suchwert = rsplit("Deaktiviert|Aktiviert|Verbunden|Dediziert|\n|Getrennt|Verw.|Status|Schnittstellenname|status|Typ|\n", Network_Overview)
+        Search_Values = rsplit("Deaktiviert|Aktiviert|Verbunden|Dediziert|\n|Getrennt|Verw.|Status|Schnittstellenname|status|Typ|\n", Network_Overview)
+    else: pass
+        #Network_Overview = getoutput('ip address')
+        #Search_Values = rsplit("Deaktiviert|Aktiviert|Verbunden|Dediziert|\n|Getrennt|Verw.|Status|Schnittstellenname|status|Typ|\n", Network_Overview)
 
     Name = ""
-    for i in Suchwert:
+    for i in Search_Values:
         Filter_Search = findall("[a-z A-Z 0-9 -]", str(i))
         for k in Filter_Search:
             Name += k
