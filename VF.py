@@ -26,8 +26,7 @@ def Program_Destroy():
     global Program_Close
 
     Program_Close = True
-    try: PostMessage(ID_CMD, WM_CLOSE, 0, 0)
-    except: pass
+    PostMessage(ID_CMD, WM_CLOSE, 0, 0)
 
 # GUI
 def GUI():
