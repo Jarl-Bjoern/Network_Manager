@@ -9,7 +9,7 @@ try:
     from os import getcwd, name as osname
     from os.path import join
     from re import findall, split as rsplit
-    from subprocess import getoutput, PIPE, run, Popen
+    from subprocess import getoutput, PIPE, run
     from time import sleep
     from tkinter import END as tkEND, Frame, Label, Listbox, messagebox, Tk
     from tkinter.ttk import Button, Style
