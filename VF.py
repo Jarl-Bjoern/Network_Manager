@@ -183,7 +183,7 @@ def GUI():
     btn_Activate = Button(Frame_btn_Activate, text='  Aktivieren  ', style='btn.TButton', command=Activate_click).grid(row=0, column=0)
 
     # Entwickler_Bereich
-    Label_Programmer = Label(Frame_Bottom, text="Rainer Herold", bg='Black')
+    Label_Programmer = Label(Frame_Bottom, text="Bjoern Herold", bg='Black')
     Label_Programmer.configure(font=('Arial', 15), foreground='Turquoise')
     Label_Programmer.grid(row=0, column=1)
     Label_Version = Label(Frame_Bottom, text="Version 1.2", bg='Black')
