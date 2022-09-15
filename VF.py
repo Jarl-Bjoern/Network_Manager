@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Rainer C. B. Herold
+# R. C. Bjoern Herold
 # Version 0.1 02.01.2021
 # Version 1.0 04.01.2021
 # Version 1.1 24.01.2021
