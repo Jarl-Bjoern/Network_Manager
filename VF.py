@@ -173,15 +173,15 @@ def GUI():
     def Activate_click():
         Operation(lb_NICS.get(lb_NICS.curselection()),True,0.25)
 
-    # Aufruf_Bereich
+    # Main
     Network_Status(False, 0)
 
-    # Wichtige_Steuerelemente
+    # Controls
     btn_Restart = Button(Frame_btn_Restart, text='  Neustart  ', style='btn.TButton', command=Restart_click).grid(row=0, column=0)
     btn_Deactivate = Button(Frame_btn_Deactivate, text='  Deaktivieren  ', style='btn.TButton', command=Deactivate_click).grid(row=0, column=0)
     btn_Activate = Button(Frame_btn_Activate, text='  Aktivieren  ', style='btn.TButton', command=Activate_click).grid(row=0, column=0)
 
-    # Entwickler_Bereich
+    # Programmer
     Label_Programmer = Label(Frame_Bottom, text="Bjoern Herold", bg='Black')
     Label_Programmer.configure(font=('Arial', 15), foreground='Turquoise')
     Label_Programmer.grid(row=0, column=1)
